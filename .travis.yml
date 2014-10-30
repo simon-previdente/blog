@@ -1,0 +1,12 @@
+language: python
+branches:
+  only:
+  - master
+install:
+- pip install pelican
+- pip install ghp-import
+script:
+- make publish github
+env:
+  global:
+    secure: "K4jrRb3RcwTTCr8wsM3UH+sZawLtb62eYl2xBLTcaDpwB7qt3ycmIfQDFf02OW/Aw6vpf1re/TZ3WOahTFyitrB/rTXqCg6mNptzzTXlWaFfyc/s+PcQ0UDmwLFySIet+liOPGbJR/t4lj67YkHGCG0sT8j4bWq/57zH864HXDA="
