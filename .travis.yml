@@ -8,9 +8,9 @@ install:
 script:
 - make publish github
 after_script:
-- git config credential.helper "store --file=.git/credentials"
-- echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-- node ./node_modules/grunt-cli/bin/grunt release
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  - node ./node_modules/grunt-cli/bin/grunt release
 env:
   global:
-    secure: hQXhU02+N0boH7qubQvgkJP2Ox9+0r1uoja+Pn2lTTWxgvSjoevDEUtZDZWBrpRH4HGakOQKrQ0it/kDr94UGwKjXfxy0ZC3DxlB1WwVKuU5X5IFYfnJniUX0GoMFaGFCJqhPCvbFk5x1UPkSU2vJdDmm86Cnxn2ByR7Kf0Gkyo=
+    secure: b9L0CAc78NUQebnYpQYT5j/0uVhvMJygck3Py89jbWT9eFGznW2X19DBBXWOdqcW/PkEORL+qHeKmb1WYGij4IWxsTGhOl0DoOtzWN7R/FIpD1NF5j/7x587sc46kXMupBKKQubL2pcD76naHWK2TGKBLWFYO0mKBDAZuqdJ7Bo=
