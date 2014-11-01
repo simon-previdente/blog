@@ -2,7 +2,7 @@ PY?=python
 PELICAN?=pelican
 PELICANOPTS=
 
-BASEDIR=$(CURDIR)
+BASEDIR=https\://github.com/simon-previdente/blog.git
 INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
