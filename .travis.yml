@@ -7,10 +7,3 @@ install:
 - pip install ghp-import
 script:
 - make publish github
-after_script:
-  - git config credential.helper "store --file=.git/credentials"
-  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-  - node ./node_modules/grunt-cli/bin/grunt release
-env:
-  global:
-    secure: b9L0CAc78NUQebnYpQYT5j/0uVhvMJygck3Py89jbWT9eFGznW2X19DBBXWOdqcW/PkEORL+qHeKmb1WYGij4IWxsTGhOl0DoOtzWN7R/FIpD1NF5j/7x587sc46kXMupBKKQubL2pcD76naHWK2TGKBLWFYO0mKBDAZuqdJ7Bo=
