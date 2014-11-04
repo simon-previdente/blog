@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-
 AUTHOR = u'Simon'
-SITENAME = u'Simon Pr\xe9vidente - Blog'
-SITEURL = 'http://simon-previdente.github.io/blog'
+SITENAME = u'Simon Prévidente - Blog'
+SITEURL = 'https://simon-previdente.github.io/blog'
+GITHUB_URL = 'https://github.com/simon-previdente/'
+TIMEZONE = 'Europe/Paris'
 
 PATH = 'content'
-
-TIMEZONE = 'Europe/Paris'
+RELATIVE_URLS = 'False'
 
 DEFAULT_LANG = u'fr'
 
