@@ -8,7 +8,6 @@ GITHUB_URL = 'https://github.com/simon-previdente/'
 TIMEZONE = 'Europe/Paris'
 
 PATH = 'content'
-RELATIVE_URLS = 'False'
 
 DEFAULT_LANG = u'fr'
 
