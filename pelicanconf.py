@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 AUTHOR = u'Simon'
 SITENAME = u'Simon Prévidente'
-SITEURL = 'https://simon-previdente.github.io/blog'
+SITEURL = 'https://simon-previdente.fr/blog'
 GITHUB_URL = 'https://github.com/simon-previdente/'
 DISQUS_SITENAME= 'simonprevidente'
 TIMEZONE = 'Europe/Paris'
