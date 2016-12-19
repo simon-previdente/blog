@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Simon Prévidente - Blog</title><link href="//simon-previdente.fr/blog/" rel="alternate"></link><link href="//simon-previdente.fr/blog/feeds/blog.atom.xml" rel="self"></link><id>//simon-previdente.fr/blog/</id><updated>2016-12-14T08:00:00+01:00</updated><entry><title>Vouloir trop bien faire et ne rien faire</title><link href="//simon-previdente.fr/blog/vouloir-trop-bien-faire-et-ne-rien-faire.html" rel="alternate"></link><published>2016-12-14T08:00:00+01:00</published><updated>2016-12-14T08:00:00+01:00</updated><author><name>Simon Prévidente</name></author><id>tag:simon-previdente.fr,2016-12-14:/blog/vouloir-trop-bien-faire-et-ne-rien-faire.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Pour cet article, j’ai prévu un workflow simple et durable. Pour vous résumer rapidement : j’écrirai cet article avec Vim… dans une console Hyper… installée dans un conteneur Docker… tout ça pour écrire dans un fichier Markdown… qui sera versionné avec git… synchronisé sur un serveur Gitlab… hébergé sur …&lt;/em&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Pour cet article, j’ai prévu un workflow simple et durable. Pour vous résumer rapidement : j’écrirai cet article avec Vim… dans une console Hyper… installée dans un conteneur Docker… tout ça pour écrire dans un fichier Markdown… qui sera versionné avec git… synchronisé sur un serveur Gitlab… hébergé sur un serveur auto-hébergé… avec de l’intégration continue pour générer les pages HTML… avec Jekyll… avec un joli template… 100 % accessible… optimisé… éco-responsable… Bref si avec tout ça, ça ne marche pas, j’arrêterai tout. Mais là dans l’immédiat, il faut que je progresse, il faut que j’étudie comment mettre en place tout ça, sinon je ne vais pas y arriver, mal faire, accumuler de la dette technique et me faire bâcher.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Vous l’aurez compris, si je m’étais arrêté à tout ça, je me serais noyé comme j’ai l’habitude de le faire avec mes idées de side project, alors je profite de cette super occasion (&lt;a class="reference external" href="https://www.hteumeuleu.fr/en-decembre-ecrivez-partagez-hashtag-nowwwel/"&gt;#nowwwel&lt;/a&gt;) pour mettre fin à cette boucle infernale avec vous à travers différentes astuces que j’ai pu rassembler.&lt;/p&gt;
+&lt;div class="section" id="faites-des-trucs"&gt;
+&lt;h2&gt;Faites « des trucs »&lt;/h2&gt;
+&lt;p&gt;C’est le meilleur conseil qu’on ne m’ait jamais donné (c’était à &lt;a class="reference external" href="https://sudweb.fr/2015/programme.html#elaboratoires"&gt;Sud web 2015&lt;/a&gt;). À mes yeux, c’est l’unique moyen de progresser : vous aurez beau assister à de nombreuses conférences, lire tous les livres et articles que vous trouverez, si vous n’appliquez pas, vous finirez par oublier ou ne jamais vraiment savoir faire (ça revient un peu au même…). Et quel meilleur moyen d’expérimenter que les side projects ? Avec ces projets, vous avez zéro obligation : vous pouvez vous faire plaisir et utiliser la techno que vous souhaitez sans avoir de compte à rendre à personne (même si c’est jQuery, puisque après tout, on est tous passé par là et ça nous a permis de mieux appréhender ce qui a suivi, donc pas de quoi rougir, foncez !). Enfin, si vous pouvez, montrez-les, ça ne peut-être que positif : ça pourra inspirer des confrères, attirer de potentiels recruteurs et vous pourriez être surpris de voir une pointure (ou un collègue) vous aider avec bienveillance.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="release-early-release-often"&gt;
+&lt;h2&gt;« Release early, release often »&lt;/h2&gt;
+&lt;p&gt;Vous voilà motivés à réaliser plein de side projects. Mais avant de vous lancer, pensez à affiner vos objectifs : n’ayez pas les yeux plus gros que le ventre, visez les « petites victoires », essayez d’obtenir un &lt;a class="reference external" href="https://frank.taillandier.me/agile/2016/01/28/comprendre-le-mvp/"&gt;MVP&lt;/a&gt; avant d’envisager de poursuivre, d’abandonner ou de tout recommencer, préférez les petites itérations aux longs tunnels desquels vous ne verrez jamais le bout.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.yabz.fr/"&gt;Guillaume Ayoub&lt;/a&gt; a fait une très belle démonstration cette année à la &lt;a class="reference external" href="https://www.pycon.fr/2016/"&gt;PyCon-fr&lt;/a&gt; en développant en 30 minutes seulement une appli permettant de convertir un fichier SVG en Bitmap. Pour atteindre cette performance, il a commencé par une étude rapide (&amp;lt; 2min) des spécifications du format SVG et du parser XML de Python puis, après avoir trouvé une bibliothèque de dessin, il s’est fixé successivement ces différents objectifs : créer un PNG vide, lire le premier élément du fichier XML (celui qui contient les dimensions), créer un PNG vide ayant les bonnes dimensions, lire les enfants du premier élément XML (qui correspondent aux différents objets du dessin), séparer les différentes commandes du XML, dessiner ces commandes et enfin mettre les couleurs. À chaque objectif atteint, il s’auto-félicitait et partageait sa joie avec le reste de la salle.&lt;/p&gt;
+&lt;p&gt;Dernier piège dans lequel il ne faut surtout pas tomber : ne cherchez pas à appliquer toutes les bonnes pratiques, vous n’y arriverez pas. Oui, vous pouvez souvent entendre que « l’accessibilité / la sécurité / l’ergonomie / l’éco-conception, etc. doivent se prévoir dès le début du projet ». Sauf qu’en pratique, si vous cherchez à tout appliquer tout de suite (pour la première fois), au mieux vous resterez paralysé, au pire vous vous noierez sous une tonne de documentation. La bonne pratique en matière de bonne pratique (la méta bonne pratique ;-)) est de n’en prendre que quelques unes (de nouvelles) et de garder les autres pour les prochaines itérations. « Le mieux est l’ennemi du bien. »&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="fail-fast"&gt;
+&lt;h2&gt;« Fail fast ! »&lt;/h2&gt;
+&lt;p&gt;Qu’on se le dise, votre projet ne sera jamais vraiment terminé, jamais parfait, il ne satisfera jamais tout le monde. Et je vais être encore plus négatif : il n’y aura sûrement que les insatisfaits qui se manifesteront. Pour autant, ce serait dommage de baisser les bras, surtout quand on sait qu’on est absolument tous passé par là : pour apprendre à marcher, pour apprendre à parler/lire/écrire… Si on avait attendu d’être au top pour commencer, on attendrait encore. Il n’y a pas de secret, il faut se lancer, se planter, analyser/comprendre et (on ne le dira jamais assez →) itérer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lexemple-ultime"&gt;
+&lt;h2&gt;L’exemple ultime&lt;/h2&gt;
+&lt;p&gt;Un collègue m’a récemment fait découvrir ce message datant du 25 août 1991 :&lt;/p&gt;
+&lt;pre class="code text literal-block"&gt;
+Hello everybody out there using minix -
+
+I'm doing a (free) operating system (just a hobby, won't be big and
+professional like gnu) for 386(486) AT clones.  This has been brewing
+since april, and is starting to get ready.  I'd like any feedback on
+things people like/dislike in minix, as my OS resembles it somewhat
+(same physical layout of the file-system (due to practical reasons)
+among other things).
+
+I've currently ported bash(1.08) and gcc(1.40), and things seem to work.
+This implies that I'll get something practical within a few months, and
+I'd like to know what features most people would want.  Any suggestions
+are welcome, but I won't promise I'll implement them :-)
+
+            Linus (torv...&amp;#64;kruuna.helsinki.fi)
+
+PS.  Yes - it's free of any minix code, and it has a multi-threaded fs.
+It is NOT protable (uses 386 task switching etc), and it probably never
+will support anything other than AT-harddisks, as that's all I have :-(.
+&lt;/pre&gt;
+&lt;p&gt;( &lt;em&gt;« je fabrique un système d’exploitation (gratuit- c’est juste un passe temps, ça ne grandira pas et ne sera pas professionnel comme GNU) pour les processeurs 386(486) AT clones. […] J’ai porté bash(1.08) et gcc(1.40), et ça a l’air de marcher. […] ça ne supportera sans doute rien d’autre que les disques dur AT, vu que c’est tout ce que j’ai :-( »&lt;/em&gt; )&lt;/p&gt;
+&lt;p&gt;Il n’était pas plus visionnaire que vous et moi, finalement on suit plus ou moins tous le même chemin, alors foncez. ;-)&lt;/p&gt;
+&lt;p&gt;Si vous voulez approfondir, je vous suggère l’article &lt;a class="reference external" href="http://letrainde13h37.fr/26/aide-toi-le-web-aidera/"&gt;Aide-toi, le Web t’aidera&lt;/a&gt; de &lt;a class="reference external" href="http://marieguillaumet.com/"&gt;Marie Guillaumet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Merci encore à tous les contributeurs sans qui cet article n’aurait pas vu le jour. J’ai hâte d’avoir vos retours.&lt;/p&gt;
+&lt;/div&gt;
+</content></entry><entry><title>Blend Web Mix 2015</title><link href="//simon-previdente.fr/blog/blendwebmix-confs.html" rel="alternate"></link><published>2016-04-28T16:20:00+02:00</published><updated>2016-04-28T16:20:00+02:00</updated><author><name>Simon Prévidente</name></author><id>tag:simon-previdente.fr,2016-04-28:/blog/blendwebmix-confs.html</id><summary type="html">&lt;p&gt;Il y a six mois, j’étais à Blend Web Mix 2015, une grosse conférence qui se tenait à Lyon et qui rassemblait 1800 personnes impliquées de manières très différentes dans le web (recherche, développement, design, marketing…).&lt;/p&gt;
+&lt;p&gt;Humainement, c’était éprouvant. J’ai eu l’impression de me retrouver seul …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Il y a six mois, j’étais à Blend Web Mix 2015, une grosse conférence qui se tenait à Lyon et qui rassemblait 1800 personnes impliquées de manières très différentes dans le web (recherche, développement, design, marketing…).&lt;/p&gt;
+&lt;p&gt;Humainement, c’était éprouvant. J’ai eu l’impression de me retrouver seul comme jamais. En effet, les participants étaient, pour la plupart, venus accompagnés et semblaient ne pas vouloir sortir de leur cercle de connaissances.&lt;/p&gt;
+&lt;p&gt;Techniquement, les conférences auxquelles j’ai eu l’occasion d’assister étaient super intéressantes et les orateurs étaient vraiment de qualités.&lt;/p&gt;
+&lt;div class="section" id="les-15-conferences-blend-a-re-voir"&gt;
+&lt;h2&gt;Les 15 conférences Blend à (re)voir&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/E7k1uWYtZMg"&gt;Alerte rouge sur la qualité du Web&lt;/a&gt; - Elie Sloïm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note : À une époque, Java &amp;amp; Flash étaient à la mode. Aujourd’hui, la situation a évolué, on traque les moindres faits et gestes de nos utilisateurs pour leur servir toujours plus de pub, sur des pages toujours plus lourdes…&lt;/em&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/qfTnmuLCs8A"&gt;Amélioration progressive de la théorie à la pratique&lt;/a&gt; - Goulven Champenois&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note : Le développement d’une solution web devrait toujours se faire dans cet ordre&amp;nbsp;: Écrire le HTML (de façon sémantique), puis styler sa page avec CSS et enfin améliorer l’expérience avec JS.&lt;/em&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/Ssxp-AbJiD0"&gt;Stratégies d’adaptation mobile : ergonomie, UX &amp;amp; performance&lt;/a&gt; - S. Walter, JP Vincent&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note: Face à l’augmentation du nombre d’utilisateurs mobiles, petit tour des solutions existantes: responsive, mobile first, différer/optimiser le chargement des ressources, accéder au matériel (appareil photo, GPS…) de l’utilisateur, contenu offline, notifications push…&lt;/em&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/udEe3doP3g4"&gt;Comment concevoir la navigation sur mobile&lt;/a&gt; - Amélie Boucher&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note : Comment permettre rapidement et simplement à l’utilisateur d’accéder à l’information dont il a besoin&amp;nbsp;? À l’aide d’une architecture réfléchie, en guidant l’utilisateur au bon moment, en personnalisant son expérience, en respectant les conventions…&lt;/em&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/2anKsmBy6ls"&gt;UX Design, et si la clé du succès se trouvait dans les théories sur l'UX&lt;/a&gt; - Carine Lallemand&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/TR3O0FtM-5c"&gt;Flexrox&lt;/a&gt; - Raphaël Goetter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note : Flexbox ou la propriété qui révolutionne le positionnement en permettant la distribution, l'ordonnancement, l'alignement et la flexibilité :) Pour autant, attention à ne pas l'utiliser partout. Uniquement pour vos composants &amp;amp; widgets.&lt;/em&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/18DdpKtOSXo"&gt;JavaScript, Stack Overdose Comment s'y retrouver&lt;/a&gt; - Nicolas Chambrier&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note : Il y a un nouveau framework ou une nouvelle librairie JS qui sort tout les 15 jours. C'est impossible à suivre, sauf si vous arrêtez d'apprendre les outils, et que vous passez à l'apprentissage des concepts qui sont derrières. Au pire, ne culpabilisez pas de louper le train « React », mais n'abandonnez pas.&lt;/em&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/6f7d_6VgiEM"&gt;Comment la plateforme MeteorJS vous permet de concrétiser rapidement vos idées&lt;/a&gt; - Benjamin Richard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note : Ce framework fonctionne avec Node, MongoDB et tout l'écosystème JS (Angular, ...) et permet, avec un seul langage, de gérer aussi bien la partie serveur, la partie DB que la partie client. Comme avec AJAX, seules les données transitent sur le réseau. Elles sont ensuite stockées des deux côtés pour être disponibles en offline.&lt;/em&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/uL9uAAzkFmI"&gt;Deep-dive dans ES6&lt;/a&gt; - Christophe Porteneuve&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note : ES6 est déjà là, et grâce à Babel, on conserve aujourd'hui la rétro-compatibilité. Les classes existaient déjà, mais deviennent plus strictes; ``Rest`` et ``Spread`` pour prendre une série d'arguments et les stocker dans un tableau; Template strings; apparition de ``let`` et ``const``; promesses nativement intégrées; avec ES7, on aura également les fonctions asynchrones&lt;/em&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/YQreLTgIJ7o"&gt;Découvrir ES6 par le code&lt;/a&gt; - Matthieu Lux&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/j0zbQFTL2p8"&gt;Pourquoi React est cool, et pourquoi vous ne devriez pas l'utiliser&lt;/a&gt; - Mathias Dugué&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note : Plutôt que de manipuler le DOM, c'est lent (et has been), votre composant React va rendre un état, puis sera injecté dans le DOM. Bref vous allez faire de petits composants qui ont un état… C'est cool, mais c'est comme sous Windows 3.1. Autre solution ? Passer au fonctionnel (structure en &amp;quot;pipe&amp;quot;, immutable, …)&lt;/em&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/unv-G5RlWkg"&gt;Design d'architecture modulaire à la BBC&lt;/a&gt; - Thomas Parisot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note : C'est quoi une fonction ? Un nom, des arguments et ça retourne quelque chose, ou sinon ça plante. C'est également prédictible donc facilement testable. A la BBC, tout est fonction, tout est développé sous forme de petits modules autonomes comme les React components ou les docker containers.&lt;/em&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/6lFXecUYwy8"&gt;D3 source d'inspiration&lt;/a&gt; - Laurent Cerveau&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note : Librairie JS pour faire de la data-visualisation sous différentes formes. Possiblité de faire des sélections, d'utiliser des échelles pour par exemple calculer la couleur de points intermédiaires…&lt;/em&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/BpyzP4_9xjM"&gt;Apprenez Python en 40min&lt;/a&gt; - Lionel Barret de Nazaris&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note : Python n'est pas dans le navigateur, donc pas côté client, mais côté serveur. Il est partout (dans le domaine de la 3D, du web, ...) parce qu'il est capable de communiquer avec tout le monde. Il est certes lent à l'exécution, mais rapide sur les phases de conceptions. Complet, simple à apprendre, facile à installer… What else ?&lt;/em&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/95tQaVh9op0"&gt;Golang, la nouvelle tendance pour développer applications Web, sites, CMS, API&lt;/a&gt; - Patrice Ferlet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note : Considéré comme technique alors qu'il est simple, moderne et qu'il n'y a que 20 mots clés, Go est développé par Google depuis 2007 et délivré depuis 2009, pour répondre aux problèmes de scalabilité et parce que C++ prenait trop de temps à compiler. Go est compilé en binaire natif, dispose d'outils de testing natifs, de pointeurs, de structures, d'interfaces… (Pas de class, ni d'annotations, ni d'allocations de mémoire)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Cette liste est non exhaustive. Vous pourrez retrouver le reste des conférences sur la &lt;a class="reference external" href="https://www.youtube.com/playlist?list=PLXOSxCLWFrNGk1yIJ5xwchct-G2oTxqU9"&gt;playlist YouTube « #BlendWebMix 2015 »&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content></entry><entry><title>Impressions post-Sud Web 2015</title><link href="//simon-previdente.fr/blog/sudweb2015-impressions.html" rel="alternate"></link><published>2015-06-04T09:30:00+02:00</published><updated>2015-06-04T09:30:00+02:00</updated><author><name>Simon Prévidente</name></author><id>tag:simon-previdente.fr,2015-06-04:/blog/sudweb2015-impressions.html</id><summary type="html">&lt;p&gt;J’étais ce week-end à Montpellier pour participer à Sud Web 2015. Une chance pour moi, celle de &lt;strong&gt;rencontrer&lt;/strong&gt; des passionnés, d’&lt;strong&gt;échanger&lt;/strong&gt;, tant lors des ateliers que des conférences, aussi bien avec des étudiants qu’avec des professionnels plus «&amp;nbsp;aguerris&amp;nbsp;» analysant avec davantage de recul l’époque que nous …&lt;/p&gt;</summary><content type="html">&lt;p&gt;J’étais ce week-end à Montpellier pour participer à Sud Web 2015. Une chance pour moi, celle de &lt;strong&gt;rencontrer&lt;/strong&gt; des passionnés, d’&lt;strong&gt;échanger&lt;/strong&gt;, tant lors des ateliers que des conférences, aussi bien avec des étudiants qu’avec des professionnels plus «&amp;nbsp;aguerris&amp;nbsp;» analysant avec davantage de recul l’époque que nous traversons.&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" lang="fr"&gt;
+  &lt;p lang="fr" dir="ltr"&gt;C'est comme ça qu'on parle UX à #SudWeb pic.twitter.com/U7DjLXGlnI&lt;/p&gt;
+  — Delphine Malassingne (@Nissone) 30 Mai 2015
+&lt;/blockquote&gt;&lt;p&gt;Ce fut l’occasion de pouvoir bénéficier de nombreux &lt;strong&gt;retours d’expériences&lt;/strong&gt; (avec l’histoire du board d’Anne-Sophie Tranchet) mais aussi de faire énormément de &lt;strong&gt;découvertes&lt;/strong&gt; (de la pédale de guitare d’Olivier de Villardi interfacée par une web app à la vision du web sous forme de graphe proposée par Alexis Jacomy, en passant par une leçon pour «&amp;nbsp;Hacker son cerveau&amp;nbsp;» par Laetitia Phan).&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" lang="fr"&gt;
+  &lt;p lang="fr" dir="ltr"&gt;A @SudWeb c'est aussi apporter des réponses à des étudiants. Ils sont inquiets mais au final ils sont curieux pic.twitter.com/VYFYHtWrY5&lt;/p&gt;
+  — Sud Web (@SudWeb) 30 Mai 2015
+&lt;/blockquote&gt;&lt;p&gt;Comme vous l’aurez compris, ces deux jours ont été extrêmement denses aussi bien sur le plan humain que sur celui de la créativité. Impossible de résumer en quelques lignes la richesse de tous ces moments partagés, une idée directrice s’en dégage cependant&amp;nbsp;: &lt;strong&gt;vivement l’année prochaine&amp;nbsp;!&lt;/strong&gt; ;-)&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" lang="fr"&gt;
+  &lt;p lang="fr" dir="ltr"&gt;En tant que thym member @SudWeb, je ne sais pas si c'est la plus belle édition, mais c'est celle qui m'a humainement apporté le plus&lt;/p&gt;
+  — Nathalie Rosenberg (@nrosenberg) 31 Mai 2015
+&lt;/blockquote&gt;
+
+&lt;blockquote class="twitter-tweet" lang="fr"&gt;
+  &lt;p lang="fr" dir="ltr"&gt;On vous donne rendez-vous les 27 et 28 mai 2016 à Bordeaux #sudweb&lt;/p&gt;
+  — Sud Web (@SudWeb) 29 Mai 2015
+&lt;/blockquote&gt;
+
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;</content></entry></feed>
