@@ -29,7 +29,13 @@ Dernier piège dans lequel il ne faut surtout pas tomber : ne cherchez pas à ap
 « Fail fast ! »
 ---------------
 
-Qu’on se le dise, votre projet ne sera jamais vraiment terminé, jamais parfait, il ne satisfera jamais tout le monde. Et je vais être encore plus négatif : il n’y aura sûrement que les insatisfaits qui se manifesteront. Pour autant, ce serait dommage de baisser les bras, surtout quand on sait qu’on est absolument tous passé par là : pour apprendre à marcher, pour apprendre à parler/lire/écrire… Si on avait attendu d’être au top pour commencer, on attendrait encore. Il n’y a pas de secret, il faut se lancer, se planter, analyser/comprendre et (on ne le dira jamais assez →) itérer.  ## L’exemple ultime un collègue m’a récemment fait découvrir ce message datant du 25 août 1991 :
+Qu’on se le dise, votre projet ne sera jamais vraiment terminé, jamais parfait, il ne satisfera jamais tout le monde. Et je vais être encore plus négatif : il n’y aura sûrement que les insatisfaits qui se manifesteront. Pour autant, ce serait dommage de baisser les bras, surtout quand on sait qu’on est absolument tous passé par là : pour apprendre à marcher, pour apprendre à parler/lire/écrire… Si on avait attendu d’être au top pour commencer, on attendrait encore. Il n’y a pas de secret, il faut se lancer, se planter, analyser/comprendre et (on ne le dira jamais assez →) itérer.
+
+
+L’exemple ultime
+----------------
+
+Un collègue m’a récemment fait découvrir ce message datant du 25 août 1991 :
 
 .. code:: text
 
